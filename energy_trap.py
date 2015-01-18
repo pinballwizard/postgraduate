@@ -29,9 +29,15 @@ def wave():
 	# Создаем вектор обсчета
 	# vv = 1+(E+v)*step**2 # Одиночная ловушка в виде гауссиана
 	E = scipy.zeros(N)+E1/2-E1/2*(-1)**arange(N)
+<<<<<<< HEAD
 	# print(E)
 	vv = E
 	# print(vv)
+=======
+	print(E)
+	vv = E
+	print(vv)
+>>>>>>> github/master1
 	# Создаем матрицу значений
 	minus_ones = -1*scipy.ones(N-1)
 	diagonals = [minus_ones, vv, minus_ones]
